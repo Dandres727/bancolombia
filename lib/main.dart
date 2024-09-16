@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/bancolombia.dart';
 import 'package:flutter_application_1/explorar.dart';
 
 void main() {
@@ -10,8 +11,8 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-  return MaterialApp(   
-    home: HomePage(),
+  return const MaterialApp(
+    home: BancolombiaUI(),
     debugShowCheckedModeBanner: false,
   );
   }

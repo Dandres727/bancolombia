@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/explorar.dart';
 import 'package:flutter_application_1/home/homeView.dart';
 
 class BancolombiaUI extends StatefulWidget {
@@ -19,7 +20,7 @@ class BancolombiaUI extends StatefulWidget {
           child: Text("Transacciones"),
         ),
         Center(
-          child: Text("Explorar"),
+          child: Explorar(),
         ),
         Center(
           child: Text("Trámites y solicitudes"),

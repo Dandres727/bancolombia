@@ -51,11 +51,11 @@ class BancolombiaUI extends StatefulWidget {
               icon: Icon(Icons.home), 
               label: "Inicio",
             ),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Transacciones"),
+            BottomNavigationBarItem(icon: Icon(Icons.credit_card), label: "Transacciones"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.dashboard_outlined), label: "Explorar"),
+                icon: Icon(Icons.grid_view), label: "Explorar"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.contact_mail), label: "Trámites y solicitudes"),
+                icon: Icon(Icons.file_copy), label: "Trámites y solicitudes"),
             BottomNavigationBarItem(
                 icon: Icon(Icons.settings), label: "Ajustes"),
           ],

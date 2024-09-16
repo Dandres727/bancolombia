@@ -284,12 +284,12 @@ class HomeView extends StatelessWidget{
                   color: Colors.purple[100]
                 ),
                 SectionItem(
-                  imageUrl: 'imagenes/tiro_blanco.png', 
+                  imageUrl: 'imagenes/tu360_inmobiliario.png', 
                   label: 'Hogar y servicios',
                   color: Colors.green[100]
                 ),
                 SectionItem(
-                  imageUrl: 'imagenes/tiro_blanco.png', 
+                  imageUrl: 'imagenes/tu360_movilidad.png', 
                   label: 'Transporte',
                   color: Colors.yellow[100]
                 ),                                         
@@ -309,12 +309,12 @@ class HomeView extends StatelessWidget{
                 title: '', 
                 items: [
                 SectionItem(
-                  imageUrl: 'imagenes/tiro_blanco.png', 
+                  imageUrl: 'imagenes/estrella-blanca.png', 
                   label: 'Para ti',
                   color: const Color.fromARGB(255, 255, 210, 210)
                 ),
                 SectionItem(
-                  imageUrl: 'imagenes/tiro_blanco.png', 
+                  imageUrl: 'imagenes/solicitud.png', 
                   label: 'Trámites y solicitudes',
                   color: const Color.fromARGB(255, 210, 235, 255)
                 ),                                      
@@ -398,8 +398,15 @@ class HomeView extends StatelessWidget{
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
-        child: Icon(Icons.qr_code_rounded),
-        backgroundColor: Colors.white,        
+        child: Icon(Icons.qr_code),
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(100),
+          side: BorderSide(
+            color: Colors.yellow,
+            width: 5
+          )
+        )
       ),
     );
   }

@@ -176,7 +176,7 @@ class HomeView extends StatelessWidget{
                     ],
                   )
                 ),
-                                const SizedBox(width: 15,),
+                const SizedBox(width: 15,),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   width: 100,
@@ -190,6 +190,63 @@ class HomeView extends StatelessWidget{
                     ],
                   )
                 ),
+                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   width: 100,

@@ -17,7 +17,7 @@ class BancolombiaUI extends StatefulWidget {
           child: HomeView(),
         ),
         Center(
-          child: Text("Transacciones"),
+          child: Text("Transacciones"), 
         ),
         Center(
           child: Explorar(),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/Witgets/circleButton.dart';
+import 'package:flutter_application_1/explorar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeView extends StatelessWidget{
@@ -176,7 +177,7 @@ class HomeView extends StatelessWidget{
                     ],
                   )
                 ),
-                                const SizedBox(width: 15,),
+                const SizedBox(width: 15,),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   width: 100,
@@ -190,6 +191,63 @@ class HomeView extends StatelessWidget{
                     ],
                   )
                 ),
+                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   width: 100,
@@ -212,26 +270,56 @@ class HomeView extends StatelessWidget{
           ),
           Container(
             color: Colors.white,
-            child: const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Icon(Icons.car_crash,size: 70,),
-              SizedBox(width: 50,),
-              Icon(Icons.car_crash,size: 70,),              
-              SizedBox(width: 50,),
-              Icon(Icons.car_crash,size: 70,),              
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 20),
+                child: Section(
+                title: '', 
+                items: [
+                SectionItem(
+                  imageUrl: 'imagenes/tiro_blanco.png', 
+                  label: 'Gestionar día a día',
+                  color: Colors.purple[100]
+                ),
+                SectionItem(
+                  imageUrl: 'imagenes/tu360_inmobiliario.png', 
+                  label: 'Hogar y servicios',
+                  color: Colors.green[100]
+                ),
+                SectionItem(
+                  imageUrl: 'imagenes/tu360_movilidad.png', 
+                  label: 'Transporte',
+                  color: Colors.yellow[100]
+                ),                                         
+              ]),
+              )        
             ],
           ),
           ),
           Container(
             color: Colors.white,
-            child: const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Icon(Icons.car_crash,size: 70,),
-              SizedBox(width: 50,),
-              Icon(Icons.car_crash,size: 70,),              
-              SizedBox(width: 50,),         
+              Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: Section(
+                title: '', 
+                items: [
+                SectionItem(
+                  imageUrl: 'imagenes/estrella-blanca.png', 
+                  label: 'Para ti',
+                  color: const Color.fromARGB(255, 255, 210, 210)
+                ),
+                SectionItem(
+                  imageUrl: 'imagenes/solicitud.png', 
+                  label: 'Trámites y solicitudes',
+                  color: const Color.fromARGB(255, 210, 235, 255)
+                ),                                      
+              ]),
+              )       
             ],
           ),
           ),
@@ -239,39 +327,86 @@ class HomeView extends StatelessWidget{
             margin: const EdgeInsets.only(top: 15),
             child: const Text('Pensando en ti te recomendamos',style: TextStyle(fontSize: 20)),
           ),
-          const SingleChildScrollView(
+          SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
                 Card(
                   color: Colors.white,
-                  child: Text('Primera noticia'),
+                  child: Column(
+                    children: [
+                      const Text('Primera noticia'),
+                      Image.asset(
+                        'imagenes/360_news.png',                        
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(width: 10,),
+                const SizedBox(width: 10,),
                 Card(
                   color: Colors.white,
-                  child: Text('Primera noticia'),
+                  child: Column(
+                    children: [
+                      const Text('Segunda noticia'),
+                      Image.asset(
+                        'imagenes/360_news2.png',                        
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(width: 10,),
+                const SizedBox(width: 10,),
                 Card(
                   color: Colors.white,
-                  child: Text('Primera noticia'),
+                  child: Column(
+                    children: [
+                      const Text('Tercera noticia'),
+                      Image.asset(
+                        'imagenes/360_news.png',                        
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(width: 10,),
+                const SizedBox(width: 10,),
                 Card(
                   color: Colors.white,
-                  child: Text('Primera noticia'),
+                  child: Column(
+                    children: [
+                      const Text('Cuarta noticia'),
+                      Image.asset(
+                        'imagenes/360_news2.png',                        
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(width: 10,),
+                const SizedBox(width: 10,),
                 Card(
                   color: Colors.white,
-                  child: Text('Primera noticia'),
+                  child: Column(
+                    children: [
+                      const Text('Quinta noticia'),
+                      Image.asset(
+                        'imagenes/360_news.png',                        
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(width: 10,),
+                const SizedBox(width: 10,),
               ],
             ),
-          )
+          ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Icon(Icons.qr_code),
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(100),
+          side: BorderSide(
+            color: Colors.yellow,
+            width: 5
+          )
+        )
       ),
     );
   }

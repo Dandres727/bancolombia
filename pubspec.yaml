@@ -70,6 +70,11 @@ flutter:
     - assets/imagenes/muverang.png
     - assets/imagenes/tu360_movilidad.png
     - assets/imagenes/comprar_flypass.jpg
+    - assets/imagenes/tiro_blanco.png
+    - assets/imagenes/360_news.png
+    - assets/imagenes/360_news2.png
+    - assets/imagenes/estrella-blanca.png
+    - assets/imagenes/solicitud.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

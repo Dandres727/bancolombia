@@ -105,22 +105,25 @@ class HomeView extends StatelessWidget{
             ],
           ),
           Row(
+            mainAxisSize: MainAxisSize.max,
             children: [
               Container(
                 margin: const EdgeInsets.only(top: 20,left: 10, bottom: 20),
+                padding: const EdgeInsets.only(top: 50),
                 width: MediaQuery.of(context).size.height * 0.12,
                 height: 166,
                 color: const Color.fromARGB(245, 219, 98, 179),
                 child: const Column(
                 children: [
-                  Icon(Icons.toll_rounded)
+                  Icon(Icons.build_outlined,size: 40,)
                 ],
               ),
               ),
               Container(
                 margin: const EdgeInsets.only(top: 20, bottom: 20),
                 padding: const EdgeInsets.all(10),
-                width: MediaQuery.of(context).size.height * 0.55,
+                width: MediaQuery.of(context).size.height * 0.60,
+                height: 166,
                 color: Colors.black,
                 child: const Column(
                 children: [
@@ -144,7 +147,7 @@ class HomeView extends StatelessWidget{
           const Text('Transacciones principales',style: TextStyle(fontSize: 20)),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child:           Row(
+            child: Row(
             children: [
                 Container(
                   margin: const EdgeInsets.only(top: 10),
@@ -154,8 +157,8 @@ class HomeView extends StatelessWidget{
                   child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.assessment_outlined),
-                      Text('Ver saldos y movimientos',style: TextStyle(fontSize: 10),),
+                      Icon(Icons.description_outlined),
+                      Text('Ver saldos y\nmovimientos',style: TextStyle(fontSize: 10),),
                     ],
                   )
                 ),
@@ -168,8 +171,35 @@ class HomeView extends StatelessWidget{
                   child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.assessment_outlined),
-                      Text('Ver saldos y movimientos',style: TextStyle(fontSize: 10),),
+                      Icon(Icons.airplane_ticket_outlined),
+                      Text('Tranferir dinero',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                                const SizedBox(width: 15,),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar tarjetas \nde crédito y \ncrédito',style: TextStyle(fontSize: 10),),
+                    ],
+                  )
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.credit_card),
+                      Text('Pagar y \nadministrar \nfacturas',style: TextStyle(fontSize: 10),),
                     ],
                   )
                 ),

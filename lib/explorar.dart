@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Explorar extends StatelessWidget {
   @override
@@ -18,16 +19,20 @@ class Explorar extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset(
-                        'assets/images/explorar.png',
-                        width: 50,
-                        height: 50,
+                      Column(
+                        children: [ 
+                          SvgPicture.asset(
+                        'assets/logos/bancolombia-seeklogo.svg',
+                        width: 30,
+                        height: 30,
+                        color: Colors.black,
                       ),
                       SizedBox(width: 10),
                       Text(
                         'Explorar',
                         style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                      ),
+                      ),],
+                      )
                     ],
                   ),
                   SizedBox(height: 20),
@@ -35,12 +40,12 @@ class Explorar extends StatelessWidget {
                     title: 'Gestionar día a día',
                     items: [
                       SectionItem(
-                        imageUrl: 'assets/images/dia_a_dia.png',
+                        imageUrl: 'imagenes/dia_a_dia.png',
                         label: 'Día a Día',
                         color: Colors.purple[100],
                       ),
                       SectionItem(
-                        imageUrl: 'assets/images/bolsillos.png',
+                        imageUrl: 'imagenes/bolsillos.png',
                         label: 'Bolsillos',
                         color: Colors.purple[100],
                       ),
@@ -50,12 +55,12 @@ class Explorar extends StatelessWidget {
                     title: 'Hogar y servicios',
                     items: [
                       SectionItem(
-                        imageUrl: 'assets/images/recargar_celular.png',
+                        imageUrl: 'imagenes/recarga_celular.png',
                         label: 'Recargar celular',
                         color: Colors.green[100],
                       ),
                       SectionItem(
-                        imageUrl: 'assets/images/tu360_inmobiliario.png',
+                        imageUrl: 'imagenes/tu360_inmobiliario.png',
                         label: 'Tu360 Inmobiliario',
                         color: Colors.green[100],
                       ),
@@ -65,22 +70,22 @@ class Explorar extends StatelessWidget {
                     title: 'Transporte',
                     items: [
                       SectionItem(
-                        imageUrl: 'assets/images/recargar_transporte.png',
+                        imageUrl: 'imagenes/recargar_transporte.png',
                         label: 'Recargar transporte',
                         color: Colors.yellow[100],
                       ),
                       SectionItem(
-                        imageUrl: 'assets/images/muverang.png',
+                        imageUrl: 'imagenes/muverang.png',
                         label: 'Muverang',
                         color: Colors.yellow[100],
                       ),
                       SectionItem(
-                        imageUrl: 'assets/images/tu360_movilidad.png',
+                        imageUrl: 'imagenes/tu360_movilidad.png',
                         label: 'Tu360 Movilidad',
                         color: Colors.yellow[100],
                       ),
                       SectionItem(
-                        imageUrl: 'assets/images/comprar_flypass.png',
+                        imageUrl: 'imagenes/comprar_flypass.jpg',
                         label: 'Comprar Flypass',
                         color: Colors.yellow[100],
                       ),
@@ -92,32 +97,7 @@ class Explorar extends StatelessWidget {
           );
         },
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: 2,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Inicio',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.credit_card),
-            label: 'Transacciones',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view),
-            label: 'Explorar',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.file_copy),
-            label: 'Trámites y solicitudes',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Ajustes',
-          ),
-        ],
-      ),
+ 
     );
   }
 }
